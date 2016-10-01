@@ -1,7 +1,7 @@
 # What is this?
 
 This repo contains my solution of assignment for [Stanford Machine Learning Class](http://www.ml-class.org).
-Please DO NOT use any of my soloutions in my repo before the due date and NEVER submit any code in my repo as your your own soloution. Please refer to "Stanford Honer Code" below.
+Please DO NOT use any of my soloutions in this repo before the due date and NEVER submit any code in this repo as your own soloution. Please refer to "Stanford Honer Code" below.
 Questions or pointing out is always welcome, please send me a mail.
 
 
