@@ -39,21 +39,15 @@ Theta_grad = zeros(size(Theta));
 %        Theta_grad - num_users x num_features matrix, containing the 
 %                     partial derivatives w.r.t. to each element of Theta
 %
-
 % Computing Cost function (No regularization):
 diff_term  = ((X*Theta' - Y) .* R);
 J          = sum(sum(diff_term .^2))/2;
-X_grad     = ((X*Theta' - Y) .* R) * Theta;
 Theta_grad = ((X*Theta' - Y) .* R)' * X;
-
+X_grad     = ((X*Theta' - Y) .* R) * Theta;
 % Adding regularization to previousy computed cost function:
-J = J + sum(sum(Theta.^2))*lambda/2 + sum(sum(X.^2))*lambda/2;
-X_grad = X_grad + lambda * X;
+J          = J + sum(sum(Theta.^2))*lambda/2 + sum(sum(X.^2))*lambda/2;
 Theta_grad = Theta_grad + lambda * Theta;
-
-
-
-
+X_grad     = X_grad + lambda * X;
 
 % =============================================================
 
